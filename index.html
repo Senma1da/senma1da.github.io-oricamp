@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>オリ合宿コース決めフォーム</title>
+    <link rel="stylesheet" href="shitamiForm.css">
+</head>
+<body>
+    <div id="currentPrice">
+        <p>上クラ:<span id="uePrice">0</span>円/人</p><p>下クラ:<span id="shitaPrice">0</span>円/人</p>
+    </div>
+    <div id="settings">
+        <div class="setting">
+            <label for="uecla">上クラ人数</label>
+            <input type="number" id="uecla" value="18" min="1">
+        </div>
+        <div class="setting">
+            <label for="shitacla">下クラ人数</label>
+            <input type="number" id="shitacla" value="33" min="1">
+        </div>
+        <div class="setting">
+            <label for="katsuage">下クラは2.5万にする</label>
+            <input type="checkbox" id="katsuage">
+        </div>
+    </div>
+    <p id="description">表示されている金額は目安です。ここからさらに諸経費等により高くなる可能性があります。</p>
+    <div class="eventWrapper">
+        <h2 class="eventTitle">1日目</h2>
+        <div class="optionsWrapper">
+            <div class="options">
+                <button class="option selected" data-option="0">
+                    <h3 class="optionTitle">りんどう湖ファミリー牧場</h3>
+                    <p class="optionExp">入園料のみ</p>
+                    <img src="img/rindou.jpg" alt="りんどう湖ファミリー牧場">
+                </button>
+                <button class="option" data-option="1">
+                    <h3 class="optionTitle">りんどう湖ファミリー牧場</h3>
+                    <p class="optionExp">入園料+乗り放題チケット</p>
+                    <img src="img/rindou.jpg" alt="りんどう湖ファミリー牧場">
+                </button>
+                <button class="option" data-option="2">
+                    <h3 class="optionTitle">南ヶ丘牧場</h3>
+                    <p class="optionExp">入場無料</p>
+                    <img src="img/minami.jpg" alt="南ヶ丘牧場">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="eventWrapper">
+        <h2 class="eventTitle">宿</h2>
+        <div class="optionsWrapper">
+            <div class="options">
+                <button class="option selected" data-option="0">
+                    <h3 class="optionTitle">モンゴリアビレッジ テンゲル</h3>
+                    <p class="optionExp">部屋にトイレ, 水道, 風呂無し</p>
+                    <img src="img/tengeru.jpg" alt="モンゴリアビレッジ テンゲル">
+                </button>
+                <button class="option" data-option="10">
+                    <h3 class="optionTitle">TOWA ピュアコテージ</h3>
+                    <p class="optionExp"></p>
+                    <img src="img/towa.jpg" alt="TOWA ピュアコテージ">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="eventWrapper">
+        <h2 class="eventTitle">2日目</h2>
+        <div class="optionsWrapper">
+            <div class="options">
+                <button class="option selected" data-option="0">
+                    <h3 class="optionTitle">那須サファリパーク</h3>
+                    <p class="optionExp">バス2台貸切&弁当付き</p>
+                    <img src="img/safari.jpg" alt="那須サファリパーク">
+                </button>
+                <button class="option" data-option="100">
+                    <h3 class="optionTitle">那須ハイランドパーク</h3>
+                    <p class="optionExp">乗り放題&食事等用の1000円分チケット付き</p>
+                    <img src="img/highLand.jpg" alt="那須ハイランドパーク">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="shitamiForm.js"></script>
+</body>
+</html>
